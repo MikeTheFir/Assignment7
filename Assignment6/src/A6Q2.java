@@ -29,7 +29,7 @@ public class A6Q2 {
         for (int i = 0; i < tall.length; i++) {
             tall[i] = input.nextDouble();
         }
-        
+
         double sum = 0;
         for (int i = 0; i < tall.length; i++) {
             // add all the heights together into a sum to be able to divide to find the average

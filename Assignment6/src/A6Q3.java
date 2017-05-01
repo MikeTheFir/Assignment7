@@ -23,7 +23,7 @@ public class A6Q3 {
         System.out.println("Enter two integers: ");
         number[0] = input.nextInt();
         number[1] = input.nextInt();
-        
+
         // find out which number is bigger and display the correct order of integers on the screen
         if (number[0] < number[1]) {
             System.out.println("The integers in ascending order are: " + number[0] + ", " + number[1]);

@@ -17,15 +17,15 @@ public class A6Q4 {
     public static void main(String[] args) {
         // new scanner
         Scanner input = new Scanner(System.in);
-        
+
         // ask for 10 marks
         System.out.println("Please write a series of 10 marks: ");
         // make an array to hold the marks
         int[] number = new int[10];
-        
+
         // filler value
         int swap = 0;
- 
+
         // this loop will store the 10 marks put in the number array
         for (int i = 0; i < 10; i++) {
             number[i] = input.nextInt();

@@ -5,7 +5,6 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author pistm9061
@@ -18,7 +17,7 @@ public class A6Q5 {
     public static void main(String[] args) {
         // new scanner
         Scanner input = new Scanner(System.in);
-        
+
         // ask how many marks they want to input
         System.out.println("How many marks would you like to input? ");
         int amount = input.nextInt();
@@ -27,10 +26,10 @@ public class A6Q5 {
         System.out.println("Please write a series of " + amount + " marks: ");
         // make an array to hold the marks
         double[] number = new double[amount];
-        
+
         // filler value
         double swap = 0;
- 
+
         // this loop will store the 10 marks put in the number array
         for (int i = 0; i < amount; i++) {
             number[i] = input.nextInt();
@@ -61,20 +60,20 @@ public class A6Q5 {
         }
         // create a space
         System.out.println();
-        
+
         // if the # of marks is odd, then minus 1 and divide by 2 to find array placement in the middle. Used to output the number in the middle of the array
         if (amount % 2 == 1) {
             amount = (amount - 1) / 2;
             System.out.println("Median: " + number[amount]);
-            
-             // if the amount of numbers in the array are not even
+
+            // if the amount of numbers in the array are not even
         } else {
             // create the median double which becomes the average of the 2 numbers in the middle of the array by adding them and then dividing by 2
             double median = 0;
             median = ((double) number[number.length / 2] + (double) number[number.length / 2 - 1]) / 2;
             // output to the user
             System.out.println("Median: " + median);
-           
+
         }
     }
-    }
+}

@@ -5,7 +5,6 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author pistm9061
@@ -18,25 +17,25 @@ public class A6Q6 {
     public static void main(String[] args) {
         // new scanner
         Scanner input = new Scanner(System.in);
-        
+
         // get size of classroom
         System.out.println("What is the size of the classroom? ");
         int size = input.nextInt();
-        
+
         // get user to input the marks
         System.out.println("Please input " + size + " marks: ");
         // array to hold the inputted marks
         double[] number = new double[size];
-        
+
         // filler value
         double swap = 0;
-        
+
         // store the sizes inputted
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             number[i] = input.nextDouble();
         }
-        
-         // every mark in the array is given its own turn with the first loop
+
+        // every mark in the array is given its own turn with the first loop
         for (int i = 0; i < size; i++) {
             // the anumber of loops decrease as the mark being replaced increases on the array, this prevents the loop from going over the amount needed
             for (int x = 1; x < size - i; x++) {
@@ -52,7 +51,7 @@ public class A6Q6 {
             }
 
         }
-        
+
         // create double to represent average
         double average = 0;
         // add up all of the numbers in the array
@@ -72,8 +71,5 @@ public class A6Q6 {
 
     }
 }
-        
-        
-        
-    }
+}
 }
